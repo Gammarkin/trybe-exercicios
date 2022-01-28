@@ -1,0 +1,30 @@
+h1,
+p {
+  text-align: center;
+}
+
+h1:hover,
+p:hover {
+  background-color: black;
+}
+
+h1:active,
+p:active {
+  color: coral;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: none;
+}
+
+div {
+  color: brown;
+}
+
+div:hover {
+  background-color: gray;
+}
