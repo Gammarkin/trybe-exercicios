@@ -1,0 +1,67 @@
+ol {
+  background-color: yellow;
+}
+
+ol li:nth-of-type(2n) {
+  color: green;
+}
+
+ol li:nth-of-type(2n + 1) {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  color: red;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px black solid;
+}
+
+li {
+  font-size: 20px;
+}
+
+li:has([italic]) {
+  font-weight: bold;
+}
+
+.lang li:nth-child(-n + 3) {
+  color: blue;
+}
+
+.lang li:nth-of-type(2) {
+  background-color: pink;
+}
+
+.lang li:nth-of-type(3) {
+  background-color: pink;
+}
+
+.link li:hover:nth-of-type(1) {
+  font-weight: bold;
+  background-color: orange;
+}
+
+.link li:hover:nth-of-type(2) {
+  font-weight: bold;
+  background-color: green;
+}
+
+.link li:hover:nth-of-type(3) {
+  font-weight: bold;
+  background-color: black;
+}
+
+.link li:hover:nth-of-type(4) {
+  font-weight: bold;
+  background-color: yellow;
+}
+
+.link li:hover:nth-of-type(5) {
+  font-weight: bold;
+  background-color: green;
+}
