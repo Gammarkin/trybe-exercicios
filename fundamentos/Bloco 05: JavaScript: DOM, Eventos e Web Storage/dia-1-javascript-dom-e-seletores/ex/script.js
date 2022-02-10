@@ -52,8 +52,8 @@ textMa('p', 'uppercase')
 function logE(tag) {
     let logg = document.getElementsByTagName(tag)
 
-    for (let index = 0; index < logg.length; index++) {
-        console.log(logg[index]);
+    for (let i = 0; i < logg.length; i++) {
+        console.log(logg[i]);
     }
 }
 logE('p')
