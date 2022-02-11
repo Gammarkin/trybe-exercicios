@@ -100,5 +100,4 @@ main.removeChild(sectionLeft)
 
 document.getElementsById("eita").style.marginRight = "auto";
 
-ul.li.removeChild(liOito)
-
+ul.removeChild(liOito)
