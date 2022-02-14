@@ -88,31 +88,34 @@ function fridayButtom(SextaFeira) {
 fridayButtom();
 
 //ex 5
-function sexta() {
+function sexta(fridaysArray) {
     let button = document.querySelector('.btn-friday');
     button.addEventListener('click', function () {
         let friday = document.querySelectorAll('.day.friday');
-        console.log(friday);
-        for (i = 0; i < friday.length; i += 1) {
-            if (friday[i] === 'sextou') {
-                friday[i].innerText = friday[i]
+        let text = 'sextou';
+        for (i = 0; i < friday.length; i++) {
+            if (friday[i] !== text) {
+                friday[i].innerHTML = text
+
             }
-            else if (friday[i] === friday[i]) {
-                friday[i].innerText = 'sextou'
+            else {
+                friday[i].innerHTML = fridaysArray[i];
             }
         }
     });
 }
-sexta();
+let dezFridays = [4, 11, 18, 25];
+sexta(dezFridays);
 
 //ex 6
 //tentei, mas função n deu. Usei css
-/*function hover() {
-    let hoover = document.querySelector('.day');
+/*let a = document.getElementsByClassName('days');
+a.addEventListener('mouseenter', hover)
 
-    hoover.addEventListener('mouseover', function () {
-        hoover.target.style.transform = 'scale(1.5)'
-    });
-}*/
+function hover() {
+    a.innerText = 'teste'
+}
+*/
 
 //ex 7
+
