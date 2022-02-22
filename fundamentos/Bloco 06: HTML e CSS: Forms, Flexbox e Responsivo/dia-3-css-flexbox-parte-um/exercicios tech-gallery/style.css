@@ -19,8 +19,12 @@ footer {
 	justify-content: center;
 }
 
+img {
+	bottom: 40px;
+}
+
 h4 {
-	position: inherit;
+	position: relative;
 }
 
 div {
@@ -34,6 +38,8 @@ div {
 }
 
 .images {
+	height: 100%;
+	width: 860px;
 	margin-top: 60px;
 	display: flex;
 	justify-content: center;
