@@ -1,0 +1,40 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 10px;
+}
+
+header p {
+	display: flex;
+	justify-content: center;
+}
+
+aside h2 {
+	margin-left: 60px;
+}
+
+nav ul {
+	list-style: none;
+	display: inline-flex;
+}
+
+@media screen and (min-width: 800px) {
+	* {
+		background-color: antiquewhite;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	* {
+		background-color: beige;
+	}
+
+	aside article h1 {
+		margin-left: 50px;
+	}
+}
