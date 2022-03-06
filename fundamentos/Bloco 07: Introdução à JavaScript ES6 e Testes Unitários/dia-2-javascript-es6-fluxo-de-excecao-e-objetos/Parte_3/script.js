@@ -40,10 +40,7 @@ const allLessons = Object.assign({}, { lesson1 }, { lesson2 }, { lesson3 });
 
 // exercício 6
 const sumThreeInObj = (obj, key1, key2, key3, keyFinal) => {
-    const number1 = obj[key1][keyFinal];
-    const number2 = obj[key2][keyFinal];
-    const number3 = obj[key3][keyFinal];
-    const total = number1 + number2 + number3;
+    const total = obj[key1][keyFinal] + obj[key2][keyFinal] + obj[key3][keyFinal];
     return total;
 }
 // console.log(sumThreeInObj(allLessons, 'lesson1', 'lesson2', 'lesson3', 'numeroEstudantes'));
@@ -59,5 +56,31 @@ const verifyPair = (obj, key, value) => {
     }
     return false
 }
-console.log(verifyPair(lesson3, 'turno', 'noite'));
-console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+// console.log(verifyPair(lesson3, 'turno', 'noite'));
+// console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+
+// funções bônus
+const howManyWatched = (obj1, obj2, obj3, key2,) => obj1[obj2][key2] + obj1[obj3][key2];
+// console.log(howManyWatched(allLessons, 'lesson1', 'lesson3', 'numeroEstudantes'));
+
+// função bônus 2
+const getInfo = (obj, name) => {
+    const allLessons = [];
+    let allStudent = 0;
+    const array = Object.values(obj);
+    for (index in array) {
+        if (array[index].professor === name) {
+            allLessons.push(array[index].materia)
+            allStudent += array[index].numeroEstudantes;
+        }
+    }
+    return { lessons: allLessons, estudantes: allStudent };
+}
+
+const createReport = (obj, name) => {
+    const report = {};
+    report.professor = name;
+    Object.assign(report, getInfo(obj, name));
+    return report;
+}
+console.log(createReport(allLessons, 'Maria Clara'));
