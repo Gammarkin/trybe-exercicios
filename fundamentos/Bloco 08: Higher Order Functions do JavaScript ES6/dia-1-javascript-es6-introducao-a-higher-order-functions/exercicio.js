@@ -1,5 +1,5 @@
 const nameAndEmail = (fullName) => {
-    const splitName = fullName.replaceAll(' ', '_');
+    const splitName = fullName.replaceAll(' ', '_').toLowerCase();
     const newEmployee = { Nome: fullName, Email: `${splitName}@trybe.com` };
     return newEmployee;
 }
@@ -41,5 +41,6 @@ const countPoints = (rightAnswers, studentAnswers, func) => {
     }
     return `Nota: ${score}`;
 };
+
 
 // console.log(countPoints(RIGHT_ANSWERS, STUDENT_ANSWERS, answerScore));
