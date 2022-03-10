@@ -42,5 +42,4 @@ const countPoints = (rightAnswers, studentAnswers, func) => {
     return `Nota: ${score}`;
 };
 
-
 // console.log(countPoints(RIGHT_ANSWERS, STUDENT_ANSWERS, answerScore));
