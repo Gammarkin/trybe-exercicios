@@ -59,14 +59,14 @@
 ##### Bloco 8: Hight Order Function do JavaScript ES6
 
 - [x] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-5: _[Projeto - Zoo functions]()_
+- [x] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [x] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
+- [x] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [x] 8-5: _[Projeto - Zoo functions]()_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript Assícrono e Callbacks_
-- [ ] 9-2: _JavaScript Assíncrono - fetch API e async/await_
-- [ ] 9-2: _Jest - Testes Assíncronos_
+- [x] 9-1: _JavaScript Assícrono e Callbacks_
+- [x] 9-2: _JavaScript Assíncrono - fetch API e async/await_
+- [x] 9-2: _Jest - Testes Assíncronos_
 - [ ] 9-3: _[Projeto - Carrinho de Compras]()_
