@@ -6,7 +6,7 @@ const Task = (value) => {
     );
 }
 
-const promises = ['um', 2, 'tre', 4];
+const promises = ['React', 'Redux', 'Metodologias ágeis', 'E muito mais'];
 const realPromises = promises.map(e => Task(e))
 
 class MakeNewTask extends Component {
