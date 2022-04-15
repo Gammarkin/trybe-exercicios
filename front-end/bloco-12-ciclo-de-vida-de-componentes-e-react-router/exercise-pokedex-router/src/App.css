@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.maps {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
