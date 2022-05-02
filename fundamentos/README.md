@@ -69,4 +69,4 @@
 - [x] 9-1: _JavaScript Assícrono e Callbacks_
 - [x] 9-2: _JavaScript Assíncrono - fetch API e async/await_
 - [x] 9-2: _Jest - Testes Assíncronos_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [X] 9-3: _[Projeto - Carrinho de Compras]()_
