@@ -74,8 +74,8 @@ describe('test', () => {
     })
 
     it('tests resolves', async () => {
-        service.fetchDog = jest.fn();
-        service.fetchDog.mockResolvedValue("request sucess");
+        service.fetchDog = jest.fn()
+            .mockResolvedValue("request sucess");
 
         await expect(service.fetchDog()).resolves.toBe("request sucess");
         service.fetchDog.mockReset();
@@ -83,7 +83,8 @@ describe('test', () => {
     })
 
     it("tests reject", async () => {
-        service.fetchDog.mockRejectedValue("request failed");
+        service.fetchDog
+            .mockRejectedValue("request failed");
 
         await expect(service.fetchDog()).rejects.toMatch("request failed");
         expect(service.fetchDog).toHaveBeenCalledTimes(1);

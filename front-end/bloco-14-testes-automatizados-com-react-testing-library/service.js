@@ -10,9 +10,7 @@ const concat = (str1, str2) => str1.concat(str2);
 const fetchDog = async () => {
     const URL = "https://dog.ceo/api/breeds/image/random";
     const response = await fetch(URL);
-    const data = response.ok
-        ? Promise.resolve(response.json())
-        : Promise.reject(response.json());
+    const data = response.json();
     return data;
 }
 
