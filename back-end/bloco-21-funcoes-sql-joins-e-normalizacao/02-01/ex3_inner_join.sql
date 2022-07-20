@@ -5,8 +5,13 @@
 
 USE sakila;
 
-SELECT cust.customer_id, cust.first_name, cust.email, cust.address_id,
+SELECT
+cust.customer_id,
+cust.first_name,
+cust.email,
+cust.address_id,
 ad.address
-FROM customer `cust`
-INNER JOIN address `ad`
-ON ad.address_id = cust.address_id
+FROM
+customer `cust`
+INNER JOIN
+address `ad` ON ad.address_id = cust.address_id;
