@@ -61,6 +61,4 @@ const imcFunc = () => {
   });
 };
 
-imcFunc();
-
 module.exports = imcFunc;

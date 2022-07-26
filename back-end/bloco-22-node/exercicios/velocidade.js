@@ -37,6 +37,4 @@ const calcualteVelocity = () => {
   });
 };
 
-calcualteVelocity();
-
 module.exports = calcualteVelocity;
