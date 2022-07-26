@@ -1,1 +1,1 @@
-const imcFunc = require('./imc');
+console.log('index');
