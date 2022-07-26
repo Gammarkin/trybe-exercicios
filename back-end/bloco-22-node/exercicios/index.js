@@ -1,0 +1,1 @@
+const imcFunc = require('./imc');
