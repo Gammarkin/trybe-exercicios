@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(253, 251, 251);
+  border: 0;
+  font-family: fantasy;
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  font-family: monospace, sans-serif;
+  transition: all 0.3s ease;
+  background-color: rgb(6, 165, 59);
+  height: 30px;
+}
+
+#minha_foto {
+  border-radius: 15px;
+  width: 100px;
+  border: 0;
+  margin: 55px;
+  padding: 0;
+}
+
+nav {
+  justify-content: space-between;
+  top: 0;
+  margin: 0;
+  margin-top: 5px;
+  display: inline;
+  margin-left: 500px;
+  position: inherit;
+}
+
+h1 {
+  top: 8px;
+  margin-top: 0;
+  margin-right: 70px;
+  position: inherit;
+}
+
+h2 {
+  display: flex;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+nav li {
+  display: inline;
+  top: 8px;
+}
+
+a {
+  color: black;
+}
+
+p {
+  line-height: inherit;
+}
+
+table {
+  margin: 0;
+  margin-top: 80px;
+}
+
+.lado-esquerdo {
+  display: inline-block;
+  border: 1px solid green;
+  padding: 0rem 0rem;
+  vertical-align: middle;
+  margin-left: 60px;
+}
+
+.lado-direito {
+  display: inline-block;
+  border: 1px solid green;
+  padding: 0rem 0rem;
+  vertical-align: middle;
+  margin-left: 60px;
+}

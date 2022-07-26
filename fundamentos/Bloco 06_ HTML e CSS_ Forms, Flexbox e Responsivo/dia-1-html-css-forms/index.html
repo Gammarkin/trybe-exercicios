@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" minlength="10" maxlength="40" />
+      <br />
+      <label for="email">Email: </label>
+      <input type="email" id="email" minlength="10" maxlength="50" />
+      <br />
+      <input type="radio" id="Choice1" name="Choices" value="cidade" checked />
+      <label for="Choice1">opção1</label>
+      <input type="radio" id="Choice2" name="Choices" value="campo" />
+      <label for="Choice2">opção2</label>
+      <input type="radio" id="Choice3" name="Choices" value="praia" />
+      <label for="Choice3">opção3</label>
+      <input type="radio" id="Choice4" name="Choices" value="montanhas" />
+      <label for="Choice4">opção4</label>
+      <script src="script.js"></script>
+      <br />
+      <label for="resposta">Digite sua resposta:</label>
+      <br />
+      <textarea name="resposta" id="resposta" cols="30" rows="10"> </textarea>
+      <br />
+      <label for="date">Data:</label>
+      <input type="date" id="date" />
+      <br />
+      <label for="sim1">concordo1</label>
+      <input type="checkbox" name="concordo" id="sim1" />
+      <br />
+      <label for="sim2">concordo2</label>
+      <input type="checkbox" name="concordo" id="sim2" />
+    </fieldset>
+    <button type="submit" id="enviar">Enviar</button>
+    <button type="reset" id="apagar" onClick="document.location.reload(true)">
+      Apagar
+    </button>
+  </body>
+</html>
