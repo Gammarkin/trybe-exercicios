@@ -8,6 +8,8 @@ const imcFunc = () => {
 
   const ask = (i = 0) => {
     process.stdout.write(`\n\n${QUESTIONS[i]} \n`);
+    process.stdout.clearLine();
+    process.stdout.cursorTo(0);
     process.stdout.write('   > ');
   };
 
@@ -15,18 +17,25 @@ const imcFunc = () => {
 
   const answers = [];
 
-  process.stdin.on('data', (data) => {
-    answers.push(data.toString().trim());
-    if (answers.length < QUESTIONS.length) {
+  process.stdin.on('data', (data = 0) => {
+    if (isNaN(Number(data)) || data === '\n') {
+      process.stdout.write('Digite um número\n');
       ask(answers.length);
     } else {
-      const [peso, altura] = answers;
-      const imc = peso / (altura * altura);
+      answers.push(Number(data));
+      if (answers.length < QUESTIONS.length) {
+        ask(answers.length);
+      } else {
+        const [peso, altura] = answers;
+        const imc = peso / (altura * altura);
 
-      process.stdout.write(`\n\nSeu IMC é ${imc}.\n`);
-      process.exit();
+        process.stdout.write(`\n\nSeu IMC é ${imc.toFixed(2)}.\n`);
+        process.exit();
+      }
     }
   });
 };
+
+imcFunc();
 
 module.exports = imcFunc;
