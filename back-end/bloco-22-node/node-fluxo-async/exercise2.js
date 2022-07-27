@@ -10,14 +10,10 @@ const MIN_RANDOM_NUMBER = 1;
 const generateRandomNumber = () =>
   Math.floor(Math.random() * MAX_RANDOM_NUMBER + MIN_RANDOM_NUMBER);
 
-try {
-  console.log(
-    returnPromise(
-      generateRandomNumber(),
-      generateRandomNumber(),
-      generateRandomNumber()
-    )
-  );
-} catch ({message}) {
-  console.log(message);
-}
+returnPromise(
+  generateRandomNumber(),
+  generateRandomNumber(),
+  generateRandomNumber()
+)
+  .then((result) => console.log(result))
+  .catch(({message}) => console.log(message));
