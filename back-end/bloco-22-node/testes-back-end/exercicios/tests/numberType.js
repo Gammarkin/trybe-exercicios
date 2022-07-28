@@ -1,5 +1,3 @@
-// const fs = require('fs').promises;
-// const sinon = require('sinon');
 const {expect} = require('chai');
 
 const numberType = require('../funcs/numberType');
