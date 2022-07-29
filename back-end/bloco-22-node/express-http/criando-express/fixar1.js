@@ -44,6 +44,12 @@ app.get('/recipes/:id', (req, res) => {
   res.status(200).json(selectedRecipe);
 });
 
+app.get('/recipes/search', function (req, res) {
+  const {name} = req.query;
+  const filteredRecipes = recipes.filter((r) => r.name.includes(name));
+  res.status(200).json(filteredRecipes);
+});
+
 app.listen('8080', () => {
   console.log('listening in port 8080.');
 });
