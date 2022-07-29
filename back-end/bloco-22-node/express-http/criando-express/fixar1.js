@@ -16,12 +16,32 @@ const drinks = [
   {id: 6, name: 'Água Mineral 500 ml', price: 5.0},
 ];
 
-app.get('/recipes', function (req, res) {
+app.get('/recipes', function (_req, res) {
   res.json(recipes);
 });
 
-app.get('/drinks', (req, res) => {
+app.get('/drinks', (_req, res) => {
   res.json(drinks);
+});
+
+app.get('/drinks/:id', (req, res) => {
+  const {id} = req.params;
+  const selectedDrink = drinks.find((drink) => drink.id === Number(id));
+
+  if (!selectedDrink)
+    return res.status(404).json({message: 'Drink not found!'});
+
+  res.status(200).json(selectedDrink);
+});
+
+app.get('/recipes/:id', (req, res) => {
+  const {id} = req.params;
+  const selectedRecipe = recipes.find((recipe) => recipe.id === Number(id));
+
+  if (!selectedRecipe)
+    return res.status(404).json({message: 'Recipe not found!'});
+
+  res.status(200).json(selectedRecipe);
 });
 
 app.listen('8080', () => {
